@@ -4,7 +4,6 @@
 ![Project Screenshot](https://github.com/Slimsnapz/Fine-Tunning-Bert-Model/blob/f7d85484c66717f49af1ca410b988e586b6563fc/frequency_of_data_labels.png)  
 *Replace the path above with your actual screenshot or image URL of training logs, evaluation results, or a demo interface.*
 
----
 
 ## **Project Overview**
 
@@ -27,7 +26,6 @@ Yes — this kind of project can definitely serve as a strong portfolio piece **
 
 Employers value projects that are well-documented, reproducible, and show measurable impact (improved accuracy, business-relevant metric, or a working demo). See the **Suggested improvements** section below for ways to make this project stand out even more.
 
----
 
 ## **Key Components & Features**
 
@@ -40,7 +38,6 @@ Employers value projects that are well-documented, reproducible, and show measur
 - **Reproducibility:** fixed seeds, required packages (`requirements.txt`), and notebook documenting hyperparameters and results.
 - **Artifacts:** saved model checkpoints, training logs, evaluation reports, and a short demo notebook.
 
----
 
 ## **Repository Contents**
 
@@ -63,7 +60,7 @@ Employers value projects that are well-documented, reproducible, and show measur
 
 > Note: If you store checkpoint files in the repo, consider using Git LFS or linking to a cloud storage location instead.
 
----
+
 
 ## **How to run (quickstart)**
 
@@ -108,7 +105,7 @@ python src/eval.py --model_dir models/checkpoints/exp1 --test_file data/test.csv
 python src/predict.py --model_dir models/checkpoints/exp1 --input "This is an example sentence"
 ```
 
----
+
 
 ## **Core Files & Notebooks**
 
@@ -123,7 +120,7 @@ python src/predict.py --model_dir models/checkpoints/exp1 --input "This is an ex
 
 - `src/predict.py` — example inference script demonstrating tokenization and label decoding.
 
----
+
 
 ## **Modeling Details (example)**
 
@@ -135,7 +132,7 @@ python src/predict.py --model_dir models/checkpoints/exp1 --input "This is an ex
 - **Batch size / epochs:** tuned per dataset — sample: batch_size=16, epochs=3
 - **Evaluation metrics:** Accuracy / Precision / Recall / F1 (macro & micro), confusion matrix
 
----
+
 
 ## **Results (example)**
 
@@ -148,7 +145,7 @@ python src/predict.py --model_dir models/checkpoints/exp1 --input "This is an ex
 
 Include training and validation loss curves and confusion matrix image in `screenshots/` and link them in the README.
 
----
+
 
 ## **What employers look for — how to strengthen this project**
 
@@ -168,7 +165,7 @@ To make this project truly stand out in a portfolio, consider adding the followi
 9. **License & Ethics** — mention data licensing and privacy considerations.
 10. **Short video** — 1–2 minute walk-through of results and demo; recruiters often appreciate quick demos.
 
----
+
 
 ## **Suggested Next Steps (optional enhancements)**
 
@@ -177,7 +174,7 @@ To make this project truly stand out in a portfolio, consider adding the followi
 - Provide a pre-built Dockerfile for reproducible runtime and easy demo deploys.
 - Add CI (GitHub Actions) to run linting and small smoke tests on the codebase.
 
----
+
 
 ## **License & Contact**
 
@@ -185,14 +182,14 @@ To make this project truly stand out in a portfolio, consider adding the followi
 **Author:** _Your Name / GitHub handle_  
 **Contact:** _your.email@example.com_ | [LinkedIn](https://www.linkedin.com/in/yourprofile) | [Portfolio](https://your-portfolio.example.com)
 
----
+
 
 ## **Final note — short answer to your general question**
 
 **Can this kind of project help you get employed?**  
 **Yes.** If the project is well-documented, reproducible, and demonstrates measurable results (evaluation metrics, training stability, inference examples), it shows employers you can: design experiments, work with modern NLP models, write reproducible code, and communicate technical outcomes. Boost its impact by including a short demo, model card, and clear README (like this), and you’ll significantly increase its value as a portfolio piece.
 
----
+
 
 If you'd like, I can also:
 1. Generate `MODEL_CARD.md` and `DATA_DICTIONARY.md` templates based on your notebook.  
