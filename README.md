@@ -59,16 +59,9 @@ Employers value projects that are well-documented, reproducible, and show measur
    └─ training_logs.png              # training loss / eval metrics screenshot
 ```
 
-> Note: If you store checkpoint files in the repo, consider using Git LFS or linking to a cloud storage location instead.
-
 
 
 ## **How to run (quickstart)**
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/<YourUsername>/bert-finetune-project.git
-cd bert-finetune-project
 ```
 
 2. **Create a virtual environment & install requirements**
@@ -84,7 +77,7 @@ pip install -r requirements.txt
 - Expected columns (example): `text`, `label`.  
 - Update the path/column names in `src/data_loader.py` or the notebook.
 
-4. **Train (example using train.py)**
+4. **Train (using train.py)**
 ```bash
 python src/train.py \
   --model_name_or_path bert-base-uncased \
@@ -103,7 +96,7 @@ python src/eval.py --model_dir models/checkpoints/exp1 --test_file data/test.csv
 
 6. **Predict / Inference**
 ```bash
-python src/predict.py --model_dir models/checkpoints/exp1 --input "This is an example sentence"
+python src/predict.py --model_dir models/checkpoints/exp1 --input
 ```
 
 
@@ -123,76 +116,32 @@ python src/predict.py --model_dir models/checkpoints/exp1 --input "This is an ex
 
 
 
-## **Modeling Details (example)**
+## **Modeling Details**
 
 - **Backbone:** `bert-base-uncased` (Hugging Face Transformers)
 - **Optimizer:** AdamW
 - **Scheduler:** linear warmup + decay
 - **Loss:** CrossEntropyLoss (classification)
 - **Regularization:** weight decay, gradient clipping
-- **Batch size / epochs:** tuned per dataset — sample: batch_size=16, epochs=3
+- **Batch size / epochs:** tuned per dataset — sample: batch_size=16, epochs=2
 - **Evaluation metrics:** Accuracy / Precision / Recall / F1 (macro & micro), confusion matrix
 
 
 
-## **Results (example)**
+## **Results**
 
 > Replace the example values below with the real results from your notebook.
 
-- Best validation accuracy: **0.91**  
-- Best validation F1 (macro): **0.89**  
+- Best validation accuracy: **0.90**  
+- Best validation F1 (macro): **0.86**  
 - Test accuracy: **0.90**  
 - Test F1: **0.88**
 
-Include training and validation loss curves and confusion matrix image in `screenshots/` and link them in the README.
 
 
 
-## **What employers look for — how to strengthen this project**
-
-To make this project truly stand out in a portfolio, consider adding the following:
-
-1. **Clear README (this file)** — explain objective, data, results, and how to reproduce.
-2. **Data Dictionary** — describe dataset columns, class balance, and any preprocessing decisions.
-3. **Model Card** — short document with model purpose, metrics, limitations, and ethical considerations.
-4. **Reproducibility:**  
-   - `requirements.txt` (or `environment.yml`)  
-   - training hyperparameters in a single config (YAML/JSON)  
-   - seed control and exact hardware notes (GPU type, RAM)
-5. **Experiment logs** — use MLflow / Weights & Biases for logged runs and visualized metrics.
-6. **Lightweight demo** — simple Streamlit/Flask app or Colab notebook for inference so recruiters can try it quickly without installing.
-7. **Deployment notes** — explain how to serve model (TorchScript, ONNX, or Hugging Face Inference API), estimated latency, and memory footprint.
-8. **Ablation / Error analysis** — short section showing common failure cases and potential fixes.
-9. **License & Ethics** — mention data licensing and privacy considerations.
-10. **Short video** — 1–2 minute walk-through of results and demo; recruiters often appreciate quick demos.
 
 
 
-## **Suggested Next Steps (optional enhancements)**
-
-- Add a `MODEL_CARD.md` and `DATA_DICTIONARY.md`.
-- Add unit-tests for preprocessing functions and a small integration test for the `predict.py` script.
-- Provide a pre-built Dockerfile for reproducible runtime and easy demo deploys.
-- Add CI (GitHub Actions) to run linting and small smoke tests on the codebase.
 
 
-
-## **License & Contact**
-
-**License:** MIT (or choose your preferred license)  
-**Author:** _Your Name / GitHub handle_  
-**Contact:** _your.email@example.com_ | [LinkedIn](https://www.linkedin.com/in/yourprofile) | [Portfolio](https://your-portfolio.example.com)
-
-
-
-## **Final note — short answer to your general question**
-
-**Can this kind of project help you get employed?**  
-**Yes.** If the project is well-documented, reproducible, and demonstrates measurable results (evaluation metrics, training stability, inference examples), it shows employers you can: design experiments, work with modern NLP models, write reproducible code, and communicate technical outcomes. Boost its impact by including a short demo, model card, and clear README (like this), and you’ll significantly increase its value as a portfolio piece.
-
-
-
-If you'd like, I can also:
-1. Generate `MODEL_CARD.md` and `DATA_DICTIONARY.md` templates based on your notebook.  
-2. Create a small Streamlit demo script for in-repo inference.  
-3. Replace the screenshot placeholder with an actual image if you upload one now.
