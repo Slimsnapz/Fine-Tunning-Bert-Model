@@ -1,6 +1,6 @@
 # **AI Fine-Tuning Project — BERT Fine-Tune (Udemy Course Project)**
 
-![Project Screenshot](path/to/fine_tuning_screenshot.png)  
+![Project Screenshot](https://github.com/Slimsnapz/Fine-Tunning-Bert-Model/blob/c5a3942de0506e8f8a2a9bd5fa987aa19ed09df0/distribution_of_data_labels.png)  
 *Replace the path above with your actual screenshot or image URL of training logs, evaluation results, or a demo interface.*
 
 ---
