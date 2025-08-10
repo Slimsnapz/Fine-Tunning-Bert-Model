@@ -14,7 +14,7 @@
 **Objective**  
 Show how to take a pretrained transformer (BERT), adapt it to a supervised task (classification / sequence labeling / regression as applicable), and produce reproducible results, clear evaluation, and simple inference code that can be re-used or extended in production.
 
----
+
 
 ## **Why this project matters to employers**
 
