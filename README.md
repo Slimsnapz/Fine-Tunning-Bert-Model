@@ -2,6 +2,7 @@
 
 ![Project Screenshot](https://github.com/Slimsnapz/Fine-Tunning-Bert-Model/blob/c5a3942de0506e8f8a2a9bd5fa987aa19ed09df0/distribution_of_data_labels.png)  
 ![Project Screenshot](https://github.com/Slimsnapz/Fine-Tunning-Bert-Model/blob/f7d85484c66717f49af1ca410b988e586b6563fc/frequency_of_data_labels.png)  
+![Project Screenshot](https://github.com/Slimsnapz/Fine-Tunning-Bert-Model/blob/3da4d2e13afc4de95bd921c732b2c3e4decc5005/screenshots/confusion_matrix.png)  
 
 
 
